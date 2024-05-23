@@ -34,9 +34,11 @@ const UploadFile: React.FC<UploadFileProps> = ({ onDataUpload }) => {
       <input
         type="file"
         accept=".xlsx, .xls"
+        defaultValue={"xlsx"}
         onChange={handleFileChange}
         className="mb-4 p-2 border text-black"
       />
+      <p className="text-gray-600 mb-4">Please upload an Excel file (.xlsx or .xls)</p>
       <button
         onClick={handleFileUpload}
         className="bg-blue-500 text-white p-2 rounded"
