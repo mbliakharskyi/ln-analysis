@@ -92,6 +92,7 @@ const Home: React.FC = () => {
             <thead>
               <tr>
                 <th className="py-2 border px-4">Full Name</th>
+                <th className="py-2 border px-4">LinkedIn URL</th>
                 <th className="py-2 border px-4">Score</th>
               </tr>
             </thead>
@@ -99,6 +100,7 @@ const Home: React.FC = () => {
               {paginatedProfiles.map((profile, index) => (
                 <tr key={index}>
                   <td className="py-2 border px-4">{profile.full_name}</td>
+                  <td className="py-2 border px-4">{profile.url}</td>
                   <td className="py-2 border px-4">{profile.score}</td>
                 </tr>
               ))}
